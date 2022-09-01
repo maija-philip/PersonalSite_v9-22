@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Maija Philip 8/22-->
+<head>
+
+	<!-- My Logo for the Tab -->
+	<link rel="icon" type="image/png" href="assets/media/assets/logo192.png"/>
+
+	<!-- My Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<!-- My Javascript -->
+	<script src="assets/js/scripts.js"></script>
+
+  <!-- Data about my site for browsers -->
+  <meta name="description" content="My name is Maija, I'm an artist and web developer / designer. Come see my site to check out some of my work! You can also drop me a message or some feedback. Thanks so much.">
+  <meta name="keywords" content="artist, digital art, portraits, developer, designer, maija, philip, resume, about">
+  <meta name="author" content="Maija Philip">
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maija Philip</title>
+
+</head>
+<body>
+	<!-- Floating Menu Nav button -->
+	<div class="floating-button" id="hamburger" onclick="toggleNav()"></div>
+  <!-- Floating dark mode toggle
+  <button class="floating-button" id="toggle" onclick="switchColorMode()"></button> -->
+  <div class="floating-button logo" onclick="toggleNav()"></div>
+
+
+	<!-- Navigation -->
+	<nav>
+		<div class="floating-button" id="close" onclick="toggleNav()"></div>
+		<div class="floating-button logo" onclick="toggleNav()"></div>
+		<div id="nav-format">
+			<a href="home.html" class="active">home</a>
+			<a href="#web-header" onclick="toggleNav()">Websites</a>
+			<a href="#about-img" onclick="toggleNav()">About</a>
+			<a href="#art-header" onclick="toggleNav()">art</a>
+			<a href="#unbuilt-intro" onclick="toggleNav()">designs</a>
+		</div>
+	</nav>
+
+  <header>
+    <!-- Header text -->
+    <div class="header-text">
+      <h3>I'm Maija Philip</h3>
+      <h1>A Web developer<br>And designer</h1>
+      <h3 id="artist-header">and artist</h3>
+    </div>
+
+    <!-- Image of Me -->
+    <figure class="header-img">
+      <img src="assets/media/profile-purple.jpeg" alt="portrait of Maija Philip" title="portrait of Maija Philip">
+      <figcaption>Maija Philip</figcaption>
+    </figure>
+  </header>
+
+  <h2 id="web-header">Some of my websites</h2>
+
+  <!-- websites section -->
+  <div class="flow-grid griddd" id="web-examples">
+    <figure class="mobile1">
+			<a href="https://maija.xyz/2021/artsite/home.html" target="_blank">
+	      <!-- mobile 1 -->
+	      <img src="assets/media/Web1.jpg" alt="link to old redesign with art">
+			</a>
+    </figure>
+
+    <figure class="mobile2">
+			<a href="https://maija.xyz/2021/rit/project1/index.html" target="_blank">
+	      <!-- mobile 2 -->
+	      <img src="assets/media/Web2.jpg" alt="link to class project about sawmill restaraunt">
+			</a>
+    </figure>
+
+    <figure class="desktop1">
+			<a href="https://people.rit.edu/~mep4741/ISTE240/project1/index.html" target="_blank">
+	      <!-- desktop 1 -->
+	      <img src="assets/media/Web3.jpg" alt="link to a website i made about sunnyvale, ca">
+			</a>
+    </figure>
+
+    <figure class="desktop2">
+			<a href="https://maija.xyz/2021/rit/project2/index.html" target="_blank">
+      	<!-- desktop 2 -->
+      	<img src="assets/media/Web6.jpg" alt="link to class research website about software jobs in pandemic">
+			</a>
+    </figure>
+
+    <figure class="mobile3">
+			<a href="https://maija.xyz/2021/rit/project3/index.html" target="_blank">
+      	<!-- mobile 3 -->
+      	<img src="assets/media/Web4.jpg" alt="link to class project site about niall horan">
+			</a>
+    </figure>
+
+    <figure class="mobile4">
+			<a href="https://maija.xyz/2020/minimalistic/home.html" target="_blank">
+      	<!-- mobile 4 -->
+      	<img src="assets/media/Web5.jpg" alt="link to minimalist redesign">
+			</a>
+    </figure>
+  </div>
+
+
+
+  <figure id="about-img">
+    <!-- mobile 4 -->
+    <img src="assets/media/maija.svg" alt="a stylized drawing of me">
+  </figure>
+
+  <!-- about me section -->
+  <section id="about">
+    <h2>A little about me</h2>
+    <p>
+      I’m a sophomore Web and Mobile Computing major at Rochester Institute of Technology, from Sunnyvale, California. I am really passionate about Web Design, Development, and Art.
+    </p>
+  </section>
+
+
+
+  <h2 id="art-header">Here’s a bit of my art</h2>
+
+  <!-- art section -->
+  <div class="four-square griddd" id="art-content">
+    <figure onclick="expand(this)">
+      <!-- square 1 -->
+      <img src="assets/media/Art1.jpg" alt="digital portrait of woman">
+    </figure>
+
+    <figure onclick="expand(this)">
+      <!-- square 2 -->
+      <img src="assets/media/Art2.jpg" alt="ink drawing of three heads">
+    </figure>
+
+    <figure onclick="expand(this)">
+      <!-- square 3 -->
+      <img src="assets/media/Art3.jpg" alt="digital portrait of person">
+    </figure>
+
+    <figure onclick="expand(this)">
+      <!-- square 4 -->
+      <img src="assets/media/Art4.jpg" alt="pencil drawing of eyes">
+    </figure>
+  </div>
+
+
+
+  <!-- unbuilt designs intro + header -->
+  <section id="unbuilt-intro">
+    <h2>Unbuilt designs</h2>
+    <p>
+      Some of my designs were never built. I did a lot of practice redesigning popular websites like google or Amazon or just designing random websites to practice my skills.
+    </p>
+  </section>
+
+
+  <!-- designs section -->
+  <div class="flow-grid griddd" id="unbuilt-examples">
+    <figure class="mobile1" onclick="expand(this)">
+      <!-- mobile 1 -->
+      <img src="assets/media/Design1.jpg" alt="stylized hello drawing">
+    </figure>
+
+    <figure class="mobile2" onclick="expand(this)">
+      <!-- mobile 2 -->
+      <img src="assets/media/Design2.jpg" alt="stylized cat">
+    </figure>
+
+    <figure class="desktop1" onclick="expand(this)">
+      <!-- desktop 1 -->
+      <img src="assets/media/Design3.jpg" alt="web design with stylized drawings">
+    </figure>
+
+    <figure class="desktop2" onclick="expand(this)">
+      <!-- desktop 2 -->
+      <img src="assets/media/Design6.jpg" alt="web design about cat rescue">
+    </figure>
+
+    <figure class="mobile3" onclick="expand(this)">
+      <!-- mobile 3 -->
+      <img src="assets/media/Design4.jpg" alt="stylized drawing of the word super">
+    </figure>
+
+    <figure class="mobile4" onclick="expand(this)">
+      <!-- mobile 4 -->
+      <img src="assets/media/Design5.jpg" alt="recipe and grocery list app design">
+    </figure>
+  </div>
+
+	<!-- footer -->
+	<footer>
+    <figure>
+          <img src="assets/media/assets/logo.svg" alt="my logo, a stylized M" id="footer-logo">
+        </figure>
+        <h2>Thanks for visiting :)</h2>
+
+        <div class="socials">
+          <a href="https://dribbble.com/maijaphilip" id="dribbble"></a>
+          <a href="mailto:maija.philip@gmail.com" id="gmail"></a>
+          <a href="https://www.instagram.com/maija_philip/" id="instagram"></a>
+        </div>
+
+        <p>Made by Maija Philip &copy; 2021</p>
+	</footer>
+
+</body>
+</html>
