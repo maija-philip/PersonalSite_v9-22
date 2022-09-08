@@ -5,7 +5,7 @@ Personal Project
 
 Languages Used: HTML5, CSS, JavaScript
 
-Designed and built an aesthetically pleasing grid based interface that is accessible, responsive, and intuitive.
-Built expandable images and sliding hamburger menu with javascript
+ - Designed for extensibility using a grid-based interface and my own theme.css file to make new pages easy to create and modify
+ - Developed expandable images and slid
 
 hosted site: https://maija.xyz/
